@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main{
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+    max-width: 375px;
+}
+
+.container{
+    margin: 1.5rem;
+}
+
+.image-wrap{
+    position: relative;
+}
+
+.image img{
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+}
+
+.image-overlay{
+    position: absolute;
+    object-fit: cover;
+    background-color: hsl(178, 100%, 50%, 60%);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.image-overlay:hover{
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.image-overlay img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.text{
+    font-family: 'Outfit', sans-serif;
+    margin: 1.5rem 0;
+    max-width: 100%;
+}
+
+.text h1{
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.text h1:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.text p{
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+
+.complement{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.eth{
+    font-weight: 400;
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.eth p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eth img {
+    padding-right: 7px;
+}
+
+.days{
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+
+.days p{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.days img{
+    padding-right: 7px;
+ }
+
+ .line{
+    margin-bottom: 20px;
+    border: 1px solid hsl(215, 51%, 70%, 0.2);
+ }
+
+.info-user{
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    align-items: start;
+}
+
+.info-user img{
+    max-width: 10%;
+    max-height: 10%;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.info-user p{
+    align-self: center;
+}
+
+.info-user span{
+    color: #fff;
+    cursor: pointer;
+}
+
+.info-user span:hover{
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
